@@ -7,9 +7,6 @@ const router = express.Router();
 //import data
 const Posts = require('./postDb.js')
 
-//Posts
-// Add endpoints to retrieve the list of posts for a user and to store a new post for a user.
-
 //endpoints
 router.get('/', (req, res) => {
   // do your magic!
@@ -26,9 +23,6 @@ router.delete('/:id', (req, res) => {
 router.put('/:id', (req, res) => {
   // do your magic!
 });
-
-
-
 
 // custom middleware
 function validatePostId(req, res, next) {
